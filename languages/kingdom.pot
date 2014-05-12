@@ -24,40 +24,40 @@ msgstr ""
 #: search.php:46
 #: tag.php:50
 msgid "Nothing Found"
-msgstr "Ничего не найдено"
+msgstr ""
 
 #@ kingdom
 #: 404.php:17
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
-msgstr "Это несколько неудобно, не правда ли?"
+msgstr ""
 
 #@ kingdom
 #: 404.php:20
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Кажется, мы не можем найти то, что вы ищете. Воспользуйтесь поиском."
+msgstr ""
 
 #@ kingdom
 #: archive.php:16
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "Архив за день: %s"
+msgstr ""
 
 #@ kingdom
 #: archive.php:18
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "Архив за месяц: %s"
+msgstr ""
 
 #@ kingdom
 #: archive.php:20
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "Архив за год: %s"
+msgstr ""
 
 #@ kingdom
 #: archive.php:22
 msgid "Archives"
-msgstr "Архив"
+msgstr ""
 
 #@ kingdom
 #: archive.php:39
@@ -67,7 +67,7 @@ msgstr "Архив"
 #: search.php:28
 #: tag.php:32
 msgid "[Top]"
-msgstr "[Наверх]"
+msgstr ""
 
 #@ kingdom
 #: archive.php:48
@@ -77,7 +77,7 @@ msgstr "[Наверх]"
 #: search.php:37
 #: tag.php:41
 msgid "&larr; Older Posts"
-msgstr "&larr; Предыдущие записи"
+msgstr ""
 
 #@ kingdom
 #: archive.php:49
@@ -87,7 +87,7 @@ msgstr "&larr; Предыдущие записи"
 #: search.php:38
 #: tag.php:42
 msgid "Newer Posts &rarr;"
-msgstr "Следующие записи &rarr;"
+msgstr ""
 
 #@ kingdom
 #: archive.php:60
@@ -97,39 +97,39 @@ msgstr "Следующие записи &rarr;"
 #: search.php:49
 #: tag.php:53
 msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
-msgstr "Извините, но ничего не найдено. Возможно, поиск поможет найти подходящую статью."
+msgstr ""
 
 #@ kingdom
 #: author.php:15
 #, php-format
 msgid "Author Archives: %s"
-msgstr "Архив автора: %s"
+msgstr ""
 
 #@ kingdom
 #: category.php:14
 #, php-format
 msgid "Category Archives: %s"
-msgstr "Архив категории: %s"
+msgstr ""
 
 #@ kingdom
 #: comments.php:12
 msgid "Comments"
-msgstr "Комментарии"
+msgstr ""
 
 #@ kingdom
 #: comments.php:20
 msgid "&larr; Older Comments"
-msgstr "&larr; Предыдущие комментарии"
+msgstr ""
 
 #@ kingdom
 #: comments.php:21
 msgid "Newer Comments &rarr;"
-msgstr "Следующие комментарии &rarr;"
+msgstr ""
 
 #@ kingdom
 #: comments.php:27
 msgid "Comments are closed."
-msgstr "Комментирование закрыто."
+msgstr ""
 
 #@ kingdom
 #: content-aside.php:8
@@ -137,7 +137,7 @@ msgstr "Комментирование закрыто."
 #: content.php:8
 #, php-format
 msgid "Permalink to %s"
-msgstr "Постоянная ссылка на %s"
+msgstr ""
 
 #@ kingdom
 #: content-aside.php:11
@@ -146,7 +146,7 @@ msgstr "Постоянная ссылка на %s"
 #: content-quote.php:7
 #: content-status.php:19
 msgid "Continue reading"
-msgstr "Продолжить чтение"
+msgstr ""
 
 #@ kingdom
 #: content-aside.php:16
@@ -155,7 +155,7 @@ msgstr "Продолжить чтение"
 #: content.php:12
 #: content-quote.php:11
 msgid "Posted on"
-msgstr "Опубликовано "
+msgstr ""
 
 #@ kingdom
 #: content-aside.php:20
@@ -163,105 +163,105 @@ msgstr "Опубликовано "
 #: content-link.php:15
 #: content.php:16
 msgid "in"
-msgstr "в"
+msgstr ""
 
 #@ kingdom
 #: content-link.php:6
 msgid "Link"
-msgstr "Ссылка"
+msgstr ""
 
 #@ kingdom
 #: content.php:26
 msgid "&larr; Previous"
-msgstr "&larr; Предыдущий"
+msgstr ""
 
 #@ kingdom
 #: content.php:27
 msgid "Next &rarr;"
-msgstr "Следующий &rarr;"
+msgstr ""
 
 #@ kingdom
 #: content.php:65
 msgid "[Back to the Gallery]"
-msgstr "[Вернуться в Галарею]"
+msgstr ""
 
 #@ kingdom
 #: content-status.php:14
 #: functions.php:259
 msgid "at"
-msgstr "в"
+msgstr ""
 
 #@ kingdom
 #: footer.php:15
 msgid "Powered by"
-msgstr "Создано"
+msgstr ""
 
 #@ kingdom
 #: footer.php:16
 msgid "and"
-msgstr "и"
+msgstr ""
 
 #@ kingdom
 #: functions.php:40
 msgid "Primary Menu"
-msgstr "Главное Меню"
+msgstr ""
 
 #@ kingdom
 #: functions.php:65
 msgid "Primary Widget Area"
-msgstr "Главная область Виджетов"
+msgstr ""
 
 #@ kingdom
 #: functions.php:67
 msgid "The primary widget area"
-msgstr "Главная область виджетов"
+msgstr ""
 
 #@ kingdom
 #: functions.php:226
 #, php-format
 msgid "Page %s"
-msgstr "Страница %s"
+msgstr ""
 
 #@ kingdom
 #: functions.php:243
 msgid "Pingback"
-msgstr "Pingback"
+msgstr ""
 
 #@ kingdom
 #: functions.php:243
 #: functions.php:259
 msgid "[Edit]"
-msgstr "[Редактировать]"
+msgstr ""
 
 #@ kingdom
 #: functions.php:253
 msgid "says"
-msgstr "сказал"
+msgstr ""
 
 #@ kingdom
 #: functions.php:256
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает модерации."
+msgstr ""
 
 #@ kingdom
 #: functions.php:368
 msgid " Check if you want featured image of this post to be shown in the slider. You can add text description as well."
-msgstr "Отметьте, если хотите, чтобы данный пост был показан в слайдере. Вы также можете добавить текстовое описание."
+msgstr ""
 
 #@ kingdom
 #: searchform.php:7
 msgid "Enter search keyword"
-msgstr "Вводите искомое"
+msgstr ""
 
 #@ kingdom
 #: search.php:13
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Результаты поиска для: %s"
+msgstr ""
 
 #@ kingdom
 #: tag.php:14
 #, php-format
 msgid "Tag Archives: %s"
-msgstr "Архив тега: %s"
+msgstr ""
 

@@ -11,9 +11,6 @@
 			<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 		<![endif]-->
 		<?php wp_head();?>
-		<!--[if IE 7]>
-			<script src="<?php echo get_template_directory_uri(); ?>/js/ie7.js"></script>
-		<![endif]-->
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="page" class="site">

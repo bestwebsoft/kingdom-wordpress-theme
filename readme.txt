@@ -2,19 +2,19 @@
 Contributors: the BestWebSoft team
 Author URI: https://github.com/bestwebsoft
 Tags: blue, white, two-columns, left-sidebar, fixed-layout, threaded-comments, sticky-post, translation-ready, microformats, custom-menu
-Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 1.3
+Requires at least: 3.7
+Tested up to: 3.9
+Stable tag: 1.4
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Kingdom WordPress Theme, Copyright 2014 BestWebSoft.com
 Kingdom is distributed under the terms of the GNU GPL
 
-Kingdom Wordpress theme is an ordinary theme with original design. 
+Kingdom WordPress theme is an ordinary theme with original design. 
 
 == Description ==
 
-Kingdom Wordpress theme is an ordinary theme with original design. It includes most standard features and built-in slider. If you like what you see in the preview, then feel free to take and use this theme.
+Kingdom WordPress theme is an ordinary theme with original design. It includes most standard features and built-in slider. If you like what you see in the preview, then feel free to take and use this theme.
 
 = Translation =
 
@@ -42,7 +42,7 @@ Kingdom Wordpress theme is an ordinary theme with original design. It includes m
 	License:  GNU General Public License v2 or later
 	Copyright: the Bestwebsoft team, https://github.com/bestwebsoft
 
-Kingdom incorporates code from Twenty Twelve Theme by Wordpress team, Copyright 2012 Wordpress, released under GPL.
+Kingdom incorporates code from Twenty Twelve Theme by WordPress team, Copyright 2012 WordPress, released under GPL.
 Everything else used in this theme has been created by BestWebSoft, especially for the Phat theme and is distributed under GPL license.
 
 == Installation ==
@@ -66,7 +66,7 @@ Activiation and Use
 
 = Slider =
 
-After the theme has been installed the metabox "Slider Settings" will appear in the Wordpress admin panel in the post editing section. 
+After the theme has been installed the metabox "Slider Settings" will appear in the WordPress admin panel in the post editing section. 
 In this metabox you will see two input fields: text-field and checkbox. If you check the checkbox, the featured image of this particular post will appear in the slider.
 Every post (or page) has its own metabox, so if you go to another post (or page) and check the checkbox there the featured image of that post (or page) will be added to the slider as well, and the slider will have two slides. You can get as many posts (or pages) to the slider as you want.
 The slider itself is located on the frontpage and consists of three parts: title (title of post), image (featured image of post), description (short description typed into the text-field in the metabox "Slider Settings").
@@ -78,7 +78,7 @@ in blog mode and also in single posts. Post Thumbnails will not work for pages a
 
 = Post Formats: Aside, Image, Link, Status, Quote =
 
-Kingdom Wordpress theme only supports these post formats. And stylize them in a certain way. Other post formats will be displayed as normal posts.
+Kingdom WordPress theme only supports these post formats. And stylize them in a certain way. Other post formats will be displayed as normal posts.
 
 = Widgets =
 
@@ -109,6 +109,12 @@ If the theme is still not located the following instructions:
 
 == Changelog ==
 
+= v1.4 - 06.05.2014 =
+* Update: We updated all functionality for wordpress 3.9.
+* Update: Moved JS for IE from header.php to function.php.
+* Update: Renamed Wordpress by WordPress in all strings.
+* NEW: Added kingdom.pot.
+
 = v1.3 - 25.02.2014 =
 * Update: The slider styles including was updated.
 
@@ -120,6 +126,9 @@ If the theme is still not located the following instructions:
 * NEW: Ability to use the theme in your site.
 
 == Upgrade Notice ==
+
+= v1.4 =
+We updated all functionality for wordpress 3.9. Moved JS for IE from header.php to function.php. Renamed Wordpress by WordPress in all strings. Added kingdom.pot. 
 
 = v1.3 =
 The slider styles including was updated.

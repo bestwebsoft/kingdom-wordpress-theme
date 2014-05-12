@@ -15,9 +15,9 @@ get_header(); ?>
 				<?php if ( is_day() )
 						printf( __( 'Daily Archives: %s', 'kingdom' ), '<span>' . get_the_date() . '</span>' );
 					elseif ( is_month() )
-						printf( __( 'Monthly Archives: %s', 'kingdom' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'kingdom' ) ) . '</span>' );
+						printf( __( 'Monthly Archives: %s', 'kingdom' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 					elseif ( is_year() )
-						printf( __( 'Yearly Archives: %s', 'kingdom' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'kingdom' ) ) . '</span>' );
+						printf( __( 'Yearly Archives: %s', 'kingdom' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 					else
 						_e( 'Archives', 'kingdom' );
 					?>

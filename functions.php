@@ -118,9 +118,20 @@ function kingdom_scripts_styles() {
 	 */
 	wp_enqueue_script(
 		'kingdom_scripts',
-		 get_template_directory_uri() . '/js/scripts.js',
+		get_template_directory_uri() . '/js/scripts.js',
 		array( 'jquery', 'kingdom_formstyler' )
 	);
+
+	/*
+	 * Loads script IE.
+	 */
+	if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 7.0' ) || strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 8.0' ) ) {
+		wp_enqueue_script( 
+			'kingdom_ie7_script',
+			get_template_directory_uri() . '/js/ie7.js',
+			array( 'jquery' )
+		);
+	}
 
 	/*
 	 * Loads our main stylesheet.

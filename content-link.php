@@ -7,7 +7,7 @@
 <div class="kingdom-entry-content">
 	<?php the_content( __( 'Continue reading', 'kingdom' ) . '<span class="meta-nav">&rarr;</span>' ); ?>
 </div><!-- .kingdom-entry-content -->
-<div class="kingdom-entry-meta alignleft">
+<div class="kingdom-entry-meta">
 	<span class="meta-prep meta-prep-author"><?php _e( 'Posted on', 'kingdom' ); ?></span>
 	<a rel="bookmark" title="<?php the_time(); ?>" href="<?php the_permalink(); ?>"><span class="kingdom-entry-date"><?php echo get_the_date(); ?></span></a>
 	<?php $cat_list = get_the_category_list( ', ' );
