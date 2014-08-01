@@ -379,4 +379,3 @@ add_action( 'save_post', 'kingdom_slider_save_postdata' );
 add_filter( 'wp_title', 'kingdom_wp_title', 10, 2 );
 add_action( 'kingdom_thumbnail_display', 'kingdom_thumbnail_display' );
 add_action( 'kingdom_get_slider', 'kingdom_get_slider' );
-?> 

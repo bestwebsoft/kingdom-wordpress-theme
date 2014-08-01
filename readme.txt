@@ -3,8 +3,8 @@ Contributors: the BestWebSoft team
 Author URI: https://github.com/bestwebsoft
 Tags: blue, white, two-columns, left-sidebar, fixed-layout, threaded-comments, sticky-post, translation-ready, microformats, custom-menu
 Requires at least: 3.7
-Tested up to: 3.9
-Stable tag: 1.4
+Tested up to: 3.9.1
+Stable tag: 1.5
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Kingdom WordPress Theme, Copyright 2014 BestWebSoft.com
@@ -14,7 +14,7 @@ Kingdom WordPress theme is an ordinary theme with original design.
 
 == Description ==
 
-Kingdom WordPress theme is an ordinary theme with original design. It includes most standard features and built-in slider. If you like what you see in the preview, then feel free to take and use this theme.
+Looking for a balanced yet highly flexible theme for your website? If so, let us introduce a breathtaking solution! Kingdom is a unique theme that can easily bring your website to perfection. Neat, dainty and extremely easy to use, this theme will truly make your website stand out. Also, you can rest assured that your site's purpose will not be overshadowed by the abundance of little details - with Kingdom, you receive a simplistic, yet utterly functional wrap for your ideas. Although there is no limit to the fields this theme can be applied to, we believe it is best suited for Construction, Daily news, Cultural overviews, Fashion magazines, Sports reviews, Distribution sevices, Storage services, Network companies, Travel agencies, Workshops, Travel advice, Travel reviews. The demo version of this theme can be found here: http://bestwebsoft.com/wordpress_demo_theme/kingdom/
 
 = Translation =
 
@@ -109,6 +109,10 @@ If the theme is still not located the following instructions:
 
 == Changelog ==
 
+= v1.5 - 29.07.2014 =
+* Update: We updated all functionality for wordpress 3.9.1. 
+* Update: Updated css styles for select elements. 
+
 = v1.4 - 06.05.2014 =
 * Update: We updated all functionality for wordpress 3.9.
 * Update: Moved JS for IE from header.php to function.php.
@@ -126,6 +130,9 @@ If the theme is still not located the following instructions:
 * NEW: Ability to use the theme in your site.
 
 == Upgrade Notice ==
+
+= v1.5 =
+We updated all functionality for wordpress 3.9.1. Edit css styles for select elements. 
 
 = v1.4 =
 We updated all functionality for wordpress 3.9. Moved JS for IE from header.php to function.php. Renamed Wordpress by WordPress in all strings. Added kingdom.pot. 

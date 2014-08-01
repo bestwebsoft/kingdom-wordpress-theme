@@ -3,8 +3,8 @@ Theme Name: Kingdom
 Theme URI: http://bestwebsoft.com/theme/kingdom/
 Author: the BestWebSoft team
 Author URI: https://github.com/bestwebsoft
-Description: Kingdom WordPress theme is an ordinary theme with original design. She includes most standard features and built-in slider. If you like what you see in the preview, then feel free to take and use this theme.
-Version: 1.4
+Description: Looking for a balanced yet highly flexible theme for your website? If so, let us introduce a breathtaking solution! Kingdom is a unique theme that can easily bring your website to perfection. Neat, dainty and extremely easy to use, this theme will truly make your website stand out. Also, you can rest assured that your site's purpose will not be overshadowed by the abundance of little details - with Kingdom, you receive a simplistic, yet utterly functional wrap for your ideas. Although there is no limit to the fields this theme can be applied to, we believe it is best suited for Construction, Daily news, Cultural overviews, Fashion magazines, Sports reviews, Distribution sevices, Storage services, Network companies, Travel agencies, Workshops, Travel advice, Travel reviews. The demo version of this theme can be found here: http://bestwebsoft.com/wordpress_demo_theme/kingdom/
+Version: 1.5
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: blue, white, two-columns, left-sidebar, fixed-layout, threaded-comments, sticky-post, translation-ready, microformats, custom-menu
@@ -873,8 +873,7 @@ input[type="button"]:hover {
 	top: auto !important;
 	bottom: auto !important;
 	background-color: #bed2e6;
-	width: 240px;
-	padding: 7px 0 8px;
+	max-width: 290px !important;
 	margin: 2px 0;
 }
 .jq-selectbox__dropdown * {
@@ -893,7 +892,7 @@ input[type="button"]:hover {
 	margin-top: -6px;
 }
 .jq-selectbox li.option:hover,
-.jq-selectbox li.selected{
+.jq-selectbox li.selected {
 	cursor: pointer;
 	color: #ffffff;
 	background-color: #1a4b7d;
@@ -918,11 +917,36 @@ input[type="button"]:hover {
 	width: 130px;
 	background: #ffffff url("images/arrow.png") 152px center no-repeat;
 }
-.sidebar div .jq-selectbox__dropdown{
+.sidebar div .jq-selectbox__dropdown {
 	width: 180px;
 }
 .sidebar div .jq-selectbox li.option {
 	width: 140px;
+}
+
+.kingdom-entry-content div .jq-selectbox__dropdown {
+	color: #2366AA;
+}
+
+.sidebar .widget-container .jq-selectbox__dropdown ul {
+	margin: 0 !important;
+	padding: 0px;
+	color: #2366AA;
+	background-color: #bed2e6;
+}
+
+.kingdom-entry-content div .jq-selectbox__dropdown li,
+.sidebar .widget-container .jq-selectbox__dropdown li {
+	padding: 10px 10px 10px 10px;
+	cursor: pointer;
+}
+
+.kingdom-entry-content div .jq-selectbox__dropdown li:hover,
+.sidebar .widget-container .jq-selectbox__dropdown li:hover {
+	color: #ffffff;
+	padding: 10px 10px 10px 10px;
+	cursor: pointer;
+	background-color: #1a4b7d;
 }
 
 /* checkbox */
