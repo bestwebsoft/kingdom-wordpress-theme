@@ -9,7 +9,11 @@
 </div><!-- .kingdom-entry-content -->
 <div class="kingdom-entry-meta">
 	<span class="meta-prep meta-prep-author"><?php _e( 'Posted on', 'kingdom' ); ?></span>
-	<a rel="bookmark" title="<?php the_time(); ?>" href="<?php the_permalink(); ?>"><span class="kingdom-entry-date"><?php echo get_the_date(); ?></span></a>
+	<?php if ( is_singular() ) {
+		echo get_archives_link( get_home_url( null, get_the_date( 'Y/m' ) ), get_the_date(), '', '', '' );
+	} else { ?>
+		<a rel="bookmark" title="<?php the_time(); ?>" href="<?php the_permalink(); ?>"><span class="kingdom-entry-date"><?php echo get_the_date(); ?></span></a>
+	<?php } ?>
 	<?php $cat_list = get_the_category_list( ', ' );
 	if ( ! empty( $cat_list ) ) { ?>
 		<span class="kingdom-meta-sep"><?php _e( 'in', 'kingdom' ); ?></span>

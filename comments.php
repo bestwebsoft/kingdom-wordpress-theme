@@ -3,8 +3,9 @@
  * The template for displaying Comments.
  */
 
-if ( post_password_required() )
+if ( post_password_required() ) {
 	return;
+}
 
 if ( have_comments() || comments_open() ) { ?>
 	<div class="wrap-comments">
@@ -25,9 +26,9 @@ if ( have_comments() || comments_open() ) { ?>
 		}
 		if ( ! comments_open() ) { ?>
 			<h3 class="comments_closed"><?php _e( 'Comments are closed.', 'kingdom' ); ?></h3>
-		<?php } else { 
+		<?php } else {
 			/* comment form */
 			comment_form();
 		} ?>
 	</div><!-- .wrap-comments -->
-<?php } ?>
+<?php }

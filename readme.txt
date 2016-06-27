@@ -1,20 +1,21 @@
 === Kingdom ===
-Contributors: the BestWebSoft team
-Author URI: https://github.com/bestwebsoft
-Tags: blue, white, two-columns, left-sidebar, fixed-layout, threaded-comments, sticky-post, translation-ready, microformats, custom-menu
-Requires at least: 3.7
-Tested up to: 3.9.1
-Stable tag: 1.5
+Contributors: BestWebLayout, BestWebSoft
+Author URI: http://bestweblayout.com/
+Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready
+Requires at least: 4.2
+Tested up to: 4.5.3
+Stable tag: 1.6
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Kingdom WordPress Theme, Copyright 2014 BestWebSoft.com
+Kingdom WordPress Theme, Copyright 2016 BestWebLayout.com
 Kingdom is distributed under the terms of the GNU GPL
 
 Kingdom WordPress theme is an ordinary theme with original design. 
 
 == Description ==
 
-Looking for a balanced yet highly flexible theme for your website? If so, let us introduce a breathtaking solution! Kingdom is a unique theme that can easily bring your website to perfection. Neat, dainty and extremely easy to use, this theme will truly make your website stand out. Also, you can rest assured that your site's purpose will not be overshadowed by the abundance of little details - with Kingdom, you receive a simplistic, yet utterly functional wrap for your ideas. Although there is no limit to the fields this theme can be applied to, we believe it is best suited for Construction, Daily news, Cultural overviews, Fashion magazines, Sports reviews, Distribution sevices, Storage services, Network companies, Travel agencies, Workshops, Travel advice, Travel reviews. The demo version of this theme can be found here: http://bestwebsoft.com/wordpress_demo_theme/kingdom/
+Looking for a balanced yet highly flexible theme for your website? If so, let us introduce a breathtaking solution! Kingdom is a unique theme that can easily bring your website to perfection. Neat, dainty and extremely easy to use, this theme will truly make your website stand out. Also, you can rest assured that your site's purpose will not be overshadowed by the abundance of little details - with Kingdom, you receive a simplistic, yet utterly functional wrap for your ideas. Although there is no limit to the fields this theme can be applied to, we believe it is best suited for Construction, Daily news, Cultural overviews, Fashion magazines, Sports reviews, Distribution sevices, Storage services, Network companies, Travel agencies, Workshops, Travel advice, Travel reviews. The demo version of this theme can be found here: http://wp-demo-theme.bestweblayout.com/kingdom/
 
 = Translation =
 
@@ -58,7 +59,7 @@ Installation using "Add New Theme"
 3. Click the 'Install' button to open the theme's repository listing
 4. Click the 'Install' button
 
-Activiation and Use
+Activation and Use
 
 1. Activate the Theme through the 'Themes' menu in WordPress
 
@@ -109,12 +110,21 @@ If the theme is still not located the following instructions:
 
 == Changelog ==
 
+= v1.6 - 27.06.2016 =
+* New:    The 'title-tag' theme support was added.
+* Bugfix: Fixed mismatch coding standards.
+* Bugfix: Fixed theme styles.
+* Update: Unnecessary files category.php, author.php and tag.php have been removed.
+* Update: Screenshot was updated to size 1200x900.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.3.
+* Update: Theme was transferred to new WordPress account.
+
 = v1.5 - 29.07.2014 =
-* Update: We updated all functionality for wordpress 3.9.1. 
+* Update: We updated all functionality for WordPress 3.9.1.
 * Update: Updated css styles for select elements. 
 
 = v1.4 - 06.05.2014 =
-* Update: We updated all functionality for wordpress 3.9.
+* Update: We updated all functionality for WordPress 3.9.
 * Update: Moved JS for IE from header.php to function.php.
 * Update: Renamed Wordpress by WordPress in all strings.
 * NEW: Added kingdom.pot.
@@ -131,11 +141,14 @@ If the theme is still not located the following instructions:
 
 == Upgrade Notice ==
 
+= V1.6 =
+The 'title-tag' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Unnecessary files category.php, author.php and tag.php have been removed. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.3. Theme was transferred to new WordPress account.
+
 = v1.5 =
-We updated all functionality for wordpress 3.9.1. Edit css styles for select elements. 
+We updated all functionality for WordPress 3.9.1. Edit css styles for select elements.
 
 = v1.4 =
-We updated all functionality for wordpress 3.9. Moved JS for IE from header.php to function.php. Renamed Wordpress by WordPress in all strings. Added kingdom.pot. 
+We updated all functionality for WordPress 3.9. Moved JS for IE from header.php to function.php. Renamed Wordpress by WordPress in all strings. Added kingdom.pot.
 
 = v1.3 =
 The slider styles including was updated.

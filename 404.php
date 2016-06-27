@@ -2,8 +2,8 @@
 /**
  * The template for displaying 404 pages (Not Found).
  */
-get_header(); 
-	get_sidebar(); ?>
+get_header();
+get_sidebar(); ?>
 	<div id="articles" class="articles" role="main">
 		<!-- 404 TITLE -->
 		<section class="post meta-title">
@@ -25,4 +25,4 @@ get_header();
 		<div class="clear"></div>
 	</div><!-- #articles -->
 	<div class="clear"></div>
-<?php get_footer(); ?>
+<?php get_footer();

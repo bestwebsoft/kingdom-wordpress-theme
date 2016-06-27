@@ -6,12 +6,14 @@
  */
 ?>
 <div id="sidebar" class="sidebar">
-	<?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) {
+	<?php if ( is_active_sidebar( 'primary-widget-area' ) ) {
+		dynamic_sidebar( 'primary-widget-area' );
+	} else {
 		$args = array(
 			'before_widget' => '<aside id="%1$s" class="widget-container %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		);
 		/* default widgets */
 		the_widget( 'WP_Widget_Search', false, $args );
