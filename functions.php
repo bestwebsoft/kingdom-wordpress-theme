@@ -52,6 +52,9 @@ function kingdom_setup() {
 	 * we also set up the default background color.
 	 */
 	add_theme_support( 'custom-header', array(
+		'width'              => 940,
+		'height'             => 220,
+		'uploads'            => true,
 		'default-text-color'  => 'ffffff',
 		'admin-head-callback' => 'kingdom_admin_header_style',
 		'wp-head-callback'    => 'kingdom_header_style',
@@ -90,8 +93,6 @@ function kingdom_page_menu_args( $args ) {
  * Enqueues scripts and styles.
  */
 function kingdom_scripts_styles() {
-	global $wp_styles;
-
 	/*
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).
@@ -103,80 +104,49 @@ function kingdom_scripts_styles() {
 	/*
 	 * Loads library for styling the form elements.
 	 */
-	wp_enqueue_script(
-		'kingdom_formstyler',
-		get_template_directory_uri() . '/js/jquery.formstyler.min.js',
-		array( 'jquery' )
-	);
+	wp_enqueue_script( 'kingdom-formstyler', get_template_directory_uri() . '/js/jquery.formstyler.min.js', array( 'jquery' ) );
 
 	/*
 	 * Loads script for slider.
 	 */
 	if ( is_front_page() ) {
-		wp_enqueue_script(
-			'kingdom_slider',
-			get_template_directory_uri() . '/js/slider.js',
-			array( 'jquery' )
-		);
+		wp_enqueue_script( 'kingdom-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ) );
 	}
 
 	/*
 	 * Loads our main script.
 	 */
-	wp_enqueue_script(
-		'kingdom_scripts',
-		get_template_directory_uri() . '/js/scripts.js',
-		array( 'jquery', 'kingdom_formstyler' )
-	);
+	wp_enqueue_script( 'kingdom-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery', 'kingdom-formstyler' ) );
 
 	/*
 	 * Loads script IE.
 	 */
-	if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 7.0' ) || strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 8.0' ) ) {
-		wp_enqueue_script(
-			'kingdom_ie7_script',
-			get_template_directory_uri() . '/js/ie7.js',
-			array( 'jquery' )
-		);
-	}
+		wp_enqueue_script( 'kingdom-ie7-script', get_template_directory_uri() . '/js/ie7.js', array( 'jquery' ) );
+	wp_script_add_data( 'kingdom-ie7-script', 'conditional', 'lt IE 9' );
+	wp_enqueue_script( 'kingdom-html5-script', get_template_directory_uri() . '/js/html5.js', array( 'jquery' ) );
+	wp_script_add_data( 'kingdom-html5-script', 'conditional', 'lt IE 9' );
 
 	/*
 	 * Loads our main stylesheet.
 	 */
-	wp_enqueue_style( 'kingdom_style', get_stylesheet_uri() );
+	wp_enqueue_style( 'kingdom-style', get_stylesheet_uri() );
 
 	/*
 	 * Loads slider stylesheet.
 	 */
 	if ( is_front_page() ) {
-		wp_enqueue_style(
-			'kingdom_slider_style',
-			get_template_directory_uri() . '/css/slider.css',
-			array( 'kingdom_style' )
-		);
+		wp_enqueue_style( 'kingdom-slider-style', get_template_directory_uri() . '/css/slider.css', array( 'kingdom-style' ) );
 	}
 
 	/*
 	 * Loads stylesheet IE.
 	 */
-	wp_enqueue_style(
-		'kingdom_ie7_style',
-		get_stylesheet_directory_uri() . '/css/ie7.css',
-		array( 'kingdom_style' )
-	);
-	$wp_styles->add_data( 'kingdom_ie7_style', 'conditional', 'IE 7' );
-	wp_enqueue_style(
-		'kingdom_ie8_style',
-		get_stylesheet_directory_uri() . '/css/ie8.css',
-		array( 'kingdom_style' )
-	);
-	$wp_styles->add_data( 'kingdom_ie8_style', 'conditional', 'IE 8' );
-	wp_enqueue_style(
-		'kingdom_ie9_style',
-		get_stylesheet_directory_uri() . '/css/ie9.css',
-		array()
-	);
-	$wp_styles->add_data( 'kingdom_ie9_style', 'conditional', 'IE 9' );
+	wp_enqueue_style( 'kingdom-ie7-style', get_stylesheet_directory_uri() . '/css/ie7.css', array( 'kingdom-style' ) );
+	wp_style_add_data( 'kingdom-ie7-style', 'conditional', 'IE 7' );
+	wp_enqueue_style( 'kingdom-ie8-style', get_stylesheet_directory_uri() . '/css/ie8.css', array( 'kingdom-style' ) );
+	wp_style_add_data( 'kingdom-ie8-style', 'conditional', 'IE 8' );
+	wp_enqueue_style( 'kingdom-ie9-style', get_stylesheet_directory_uri() . '/css/ie9.css', array() );
+	wp_style_add_data( 'kingdom-ie9-style', 'conditional', 'IE 9' );
 }
 
 /** Slider functions */
@@ -222,15 +192,12 @@ function kingdom_comment( $comment, $args, $depth ) {
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
 		case 'trackback' :
-			/* Display trackbacks differently than normal comments. */
-			?>
+			/* Display trackbacks differently than normal comments. */ ?>
 			<li class="post pingback">
-			<p><?php _e( 'Pingback', 'kingdom' ); ?>: <?php comment_author_link(); ?><?php edit_comment_link( __( '[Edit]', 'kingdom' ), '<span class="edit-link">', '</span>' ); ?></p>
-			<?php
-			break;
+			<p><?php _e( 'Pingback', 'kingdom' ); ?>: <?php comment_author_link(); ?><?php edit_comment_link( __( '[Edit]', 'kingdom' ), '<span class="edit-link">', '</span>' ); ?></p></li>
+			<?php break;
 		default :
-			/* Proceed with normal comments. */
-			?>
+			/* Proceed with normal comments. */ ?>
 			<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 			<div id="comment-<?php comment_ID(); ?>">
 				<div class="comment-author">
@@ -251,9 +218,8 @@ function kingdom_comment( $comment, $args, $depth ) {
 						'max_depth' => $args['max_depth'],
 					) ) ); ?>
 				</div><!-- .reply -->
-			</div>
-			<?php
-			break;
+			</div></li>
+			<?php break;
 	endswitch;
 }
 

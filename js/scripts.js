@@ -12,7 +12,7 @@
 			$( '#access' ).css( 'visibility', 'visible' );
 		} );
 
-		/*foter on the bottom*/
+		/*footer on the bottom*/
 		var page_h = $( '#page' ).height();
 		if( screen.height > page_h ) {
 			var foot = $( '#site-footer' );

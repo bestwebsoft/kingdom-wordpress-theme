@@ -10,7 +10,7 @@
 		dynamic_sidebar( 'primary-widget-area' );
 	} else {
 		$args = array(
-			'before_widget' => '<aside id="%1$s" class="widget-container %2$s">',
+			'before_widget' => '<aside class="widget-container %s">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',

@@ -4,7 +4,7 @@ Theme URI: http://bestweblayout.com/products/kingdom/
 Author: BestWebLayout
 Author URI: http://bestweblayout.com/
 Description: Looking for a balanced yet highly flexible theme for your website? If so, let us introduce a breathtaking solution! Kingdom is a unique theme that can easily bring your website to perfection. Neat, dainty and extremely easy to use, this theme will truly make your website stand out. Also, you can rest assured that your site's purpose will not be overshadowed by the abundance of little details - with Kingdom, you receive a simplistic, yet utterly functional wrap for your ideas. Although there is no limit to the fields this theme can be applied to, we believe it is best suited for Construction, Daily news, Cultural overviews, Fashion magazines, Sports reviews, Distribution sevices, Storage services, Network companies, Travel agencies, Workshops, Travel advice, Travel reviews. The demo version of this theme can be found here: http://wp-demo-theme.bestweblayout.com/kingdom/
-Version: 1.6
+Version: 1.7
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready
@@ -104,6 +104,8 @@ td {
 	border: 0;
 	background: transparent;
 	vertical-align: baseline;
+	word-wrap: break-word;
+	word-break: break-word;
 }
 
 body {
@@ -205,6 +207,10 @@ header#masthead nav ul li {
 	float: left;
 }
 
+.header-image img {
+	display: block;
+}
+
 .wrapper_main {
 	position: relative;
 	z-index: 1;
@@ -267,7 +273,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 nav,
 section {
 	display: block;
@@ -710,6 +715,7 @@ aside ul li {
 	word-spacing: -0.2px;
 	letter-spacing: 0.1px;
 	font: 13px "Open Sans", sans-serif;
+	box-sizing: content-box;
 }
 
 .searchform.formsearch .submit {
@@ -924,8 +930,8 @@ input[type="date"] {
 .articles textarea {
 	overflow: auto;
 	margin-bottom: 27px;
-	padding: 12.5px 0 0 19px;
-	max-width: 95%;
+	padding: 12px 20px;
+	max-width: 100%;
 	width: 221px;
 	height: 93.5px;
 }
@@ -1012,6 +1018,12 @@ input[type="button"]:hover {
 	background-image: none;
 }
 
+.jq-selectbox li {
+	padding: 10px;
+	width: 220px;
+	color: #2366aa;
+}
+
 .jq-selectbox li.optgroup {
 	padding: 3px 10px 9px;
 	color: #65a0da;
@@ -1026,7 +1038,7 @@ input[type="button"]:hover {
 	list-style-image: none;
 }
 
-.jq-selectbox li.option:hover,
+.jq-selectbox li:hover,
 .jq-selectbox li.selected {
 	background-color: #1a4b7d;
 	color: #ffffff;
@@ -1079,7 +1091,7 @@ input[type="button"]:hover {
 
 .kingdom-entry-content div .jq-selectbox__dropdown li,
 .sidebar .widget-container .jq-selectbox__dropdown li {
-	padding: 10px 10px 10px 10px;
+	padding: 10px;
 	cursor: pointer;
 }
 
@@ -1374,7 +1386,7 @@ small.kingdom-top-link {
 /* Comments */
 .wrap-comments {
 	margin-top: 40px;
-	padding: 20px 10px 20px 10px;
+	padding: 10px 0;
 	border-top: 2px solid #5b8bda;
 }
 
@@ -1390,6 +1402,10 @@ ul.commentlist,
 ul.children {
 	margin: 0;
 	list-style-image: none;
+}
+
+ul.children {
+	margin-left: 20px;
 }
 
 ul.commentlist li.comment .comment-author * {
@@ -1440,13 +1456,13 @@ ul.commentlist li.comment .comment-reply-link {
 }
 
 ul.commentlist li.comment {
-	margin: 30px 0 30px;
+	margin: 0 0 30px;
 	padding: 20px;
 	border: 2px solid #5b8bda;
 }
 
 ul.children li.comment {
-	margin: 30px -15px -15px 5px;
+	margin: 0 0 30px;
 }
 
 #kingdom-comment-nav-below,

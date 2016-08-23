@@ -6,10 +6,11 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
-	<?php wp_head(); ?>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php endif;
+	wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
@@ -29,6 +30,11 @@
 				<div class="clear"></div>
 			</nav><!-- .access -->
 			<div class="clear"></div>
+			<?php if ( get_header_image() ) { ?>
+				<div class="header-image">
+					<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+				</div>
+			<?php } ?>
 		</header><!-- #masthead -->
 	</div><!-- .kingdom-bg-header -->
 	<!-- main -->

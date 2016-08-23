@@ -30,7 +30,7 @@ get_sidebar(); ?>
 					$post_counter ++; ?>
 					<div class="clear"></div>
 					<!-- COMMENTS -->
-					<?php if ( is_single() || is_page() ) {
+					<?php if ( is_singular() ) {
 						comments_template();
 					} ?>
 				</div><!-- .kingdom-entry-body -->

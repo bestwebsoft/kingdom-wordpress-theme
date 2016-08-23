@@ -9,7 +9,7 @@
 <div id="site-footer" class="kingdom-bg-footer">
 	<footer class="wrapper_footer" role="contentinfo">
 		<div id="site-info">
-			<span class="foot_date">&copy; <?php echo date( 'Y' ); ?></span> <?php echo wp_get_theme()->get( 'Name' ); ?>
+			<span class="foot_date">&copy; <?php echo date_i18n( 'Y' ); ?></span> <?php echo wp_get_theme()->get( 'Name' ); ?>
 		</div><!-- #site-info -->
 		<div id="site-generator">
 			<span><?php _e( 'Powered by', 'kingdom' ); ?></span>

@@ -17,14 +17,13 @@
 <div class="kingdom-entry-meta alignleft">
 	<span class="meta-prep meta-prep-author"><?php _e( 'Posted on', 'kingdom' ); ?></span>
 	<?php if ( is_singular() ) {
-		echo get_archives_link( get_home_url( null, get_the_date( 'Y/m' ) ), get_the_date(), '', '', '' );
+		echo '<a href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . the_title_attribute( 'echo=0' ) . '">' . get_the_date() . '</a>';
 	} else { ?>
-		<a rel="bookmark" title="<?php the_time(); ?>" href="<?php the_permalink(); ?>"><span class="kingdom-entry-date"><?php echo get_the_date(); ?></span></a>
+		<a rel="bookmark" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><span class="kingdom-entry-date"><?php echo get_the_date(); ?></span></a>
 	<?php }
-	$cat_list = get_the_category_list( ', ' );
-	if ( ! empty( $cat_list ) ) { ?>
+	if ( has_category() ) { ?>
 		<span class="kingdom-meta-sep"><?php _e( 'in', 'kingdom' ); ?></span>
-		<span class="kingdom-cat-list"><?php echo $cat_list; ?></span>
+		<span class="kingdom-cat-list"><?php the_category( ', ' ); ?></span>
 	<?php } ?>
 </div><!-- .kingdom-entry-meta -->
 <!-- navigation links for post -->

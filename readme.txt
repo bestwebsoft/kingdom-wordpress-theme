@@ -1,11 +1,11 @@
 === Kingdom ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.3
-Stable tag: 1.6
+Tested up to: 4.6
+Stable tag: 1.7
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Kingdom WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -95,20 +95,18 @@ Create a new Post or edit an existing start and select one of the options from t
 
 Create a new Post or edit an existing start. You must find the box "Featured Image" and click the "Set featured image". You'll see a window with your media library. Select one of the images or upload other and to the right will "Attachment Details". Where you can add the caption for your image.
 
-= How to locate the theme? =
+= How can I change language from English into Russian? =
 
-In order to use another language for WordPress it is necessary to switch the WP version to the required language and in the configuration wp file - `wp-config.php` in the line `define('WPLANG', '');` write `define('WPLANG', 'de_DE');`. If everything is done properly admin panel will be in German.
-If the theme is still not located the following instructions:
-1. Make sure that there are the files `de_DE.po` and `de_DE.mo` in the languages folder which is in the root of the theme.
-2. If there are no such files you should copy "kingdom.po" from this folder and rename them (you should write "de_DE.po").
-3. The files can be edited with the help of the program Poedit - http://www.poedit.net/download.php - please download this program, install it, open the file with this program (required language file) and for each line in English write translation in German.
-4. If everything is done properly all lines will be in German in the admin panel and in the front-end.
-	
+Change the language in the admin settings screen. Settings > General > Site Language.
+
 == Screenshots ==
 
 1. The Theme Front page.
 
 == Changelog ==
+
+= V1.7 - 23.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
 
 = v1.6 - 27.06.2016 =
 * New:    The 'title-tag' theme support was added.
@@ -140,6 +138,9 @@ If the theme is still not located the following instructions:
 * NEW: Ability to use the theme in your site.
 
 == Upgrade Notice ==
+
+= V1.7 =
+* The compatibility with new WordPress version updated.
 
 = V1.6 =
 The 'title-tag' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Unnecessary files category.php, author.php and tag.php have been removed. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.3. Theme was transferred to new WordPress account.
